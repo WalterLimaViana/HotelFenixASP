@@ -1,0 +1,308 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoFenix {
+    border: none;
+    width: 7%;
+    margin-left: 25px;
+    margin-top: 8px;
+    position: relative;
+}
+
+header {
+    padding: 2px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+    header nav a {
+        text-decoration: none;
+        color: black;
+        padding-bottom: 0;
+        margin: 120px;
+        margin-left: 110px;
+        font-size: 24px;
+        text-align: right;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+        header nav a:hover {
+            color: rgb(175, 175, 175);
+        }
+
+/* Rodapé */
+
+footer {
+    color: black;
+    background-color: rgb(247, 247, 247);
+    padding: 12px;
+    max-block-size: inside;
+    margin-top: 15px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --teal-050: #effcf6;
+    --teal-100: #c6f7e2;
+    --teal-200: #8eedc7;
+    --teal-300: #65d6ad;
+    --teal-400: #3ebd93;
+    --teal-500: #27ab83;
+    --teal-600: #199473;
+    --teal-700: #147d64;
+    --teal-800: #0c6b58;
+    --teal-900: #014d40;
+    --blue-grey-050: #f0f4f8;
+    --blue-grey-100: #d9e2ec;
+    --blue-grey-200: #bcccdc;
+    --blue-grey-300: #9fb3c8;
+    --blue-grey-400: #829ab1;
+    --blue-grey-500: #627d98;
+    --blue-grey-600: #486581;
+    --blue-grey-700: #334e68;
+    --blue-grey-800: #243b53;
+    --blue-grey-900: #102a43;
+}
+
+.btnBuscar {
+    margin-left: 316px;
+    margin-top: 30px;
+    max-width: max-content;
+    padding: 10px;
+    border: 1%;
+    border-radius: 4px;
+    background-color: #4081f8;
+    color: white;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+    .btnBuscar:hover {
+        background-color: #0f6fdd;
+    }
+
+.adult {
+    margin: 10px;
+}
+
+.child {
+    margin: 10px;
+}
+
+select {
+    font-size: 22px;
+}
+/*CSS Gallery Photos*/
+div.gallery {
+    margin: 25px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 450px;
+    margin-top: 35px;
+}
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+div.desc {
+    padding: 15px;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*CSS Maps*/
+iframe {
+    margin: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.titleP {
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    max-width: max-content;
+    display: block;
+    border-radius: 12px;
+    text-align: center;
+}
+
+html {
+    background: url('../src/floripa.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+footer {
+    color: black;
+    background-color: rgb(247, 247, 247);
+    padding: 12px;
+    max-block-size: inside;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titleP {
+    padding: 12px;
+    margin-top: 135px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    max-width: max-content;
+    display: block;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cadastro {
+    max-width: max-content;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 1.5em;
+    background-color: #fff;
+    border: 2px solid var(--blue-grey-200);
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--blue-grey-900);
+}
+
+.checkOut {
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+.checkIn {
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+.deluxe {
+    background-color: white;
+    border: 16px solid white;
+    border-radius: 12px;
+}
+
+#container-C {
+    width: 900px;
+    background-color: white;
+    float: right;
+    margin-right: 50px;
+    margin-top: 130px;
+    font-size: 18px;
+    text-align: left;
+    padding: 20px 0vw 20px 0vw;
+    border-radius: 12px;
+}
+
+.pictureHotel {
+    width: 0%;
+    margin-left: 32px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.picture {
+    margin: 20px;
+    margin-top: 36px;
+}
+
+.text {
+    font-family: 'Lucida Sans';
+    font-size: 22px;
+    padding: 12px 12px;
+}
+
+.title {
+    font-family: 'Lucida Sans';
+    font-size: 34px;
+    padding: 12px;
+    color: blue;
+}
+
+#container-D {
+    width: 600px;
+    background-color: white;
+    float: right;
+    margin-right: 160px;
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px 0vw 20px 0vw;
+    border-radius: 12px;
+}
+
+.picture {
+    margin: 60px;
+    margin-top: 100px;
+}
+
+.textBox1 {
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px 8px;
+}
+
+#name1, #email1, #phone1 {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+.subtitle {
+    font-family: 'Lucida Sans';
+    font-size: 18px;
+    padding: 2px;
+}
+
+input[type=submit] {
+    width: 90%;
+    background-color: #4081f8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+    input[type=submit]:hover {
+        background-color: #0f6fdd;
+    }

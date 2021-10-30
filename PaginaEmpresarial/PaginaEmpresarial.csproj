@@ -67,16 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\BancoDeDadosUsuarios.mdf" />
+    <Content Include="App_Data\BancoDeDadosUsuarios_log.ldf">
+      <DependentUpon>BancoDeDadosUsuarios.mdf</DependentUpon>
+    </Content>
     <Content Include="Cadastro.aspx" />
     <Content Include="ConhecaFlorianopolis.aspx" />
+    <Content Include="ConhecaFlorianopolisMain.aspx" />
     <Content Include="Contato.aspx" />
+    <Content Include="ContatoMain.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\bootstrap.rtl.min.css" />
     <Content Include="javascript\form-validation.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Main.aspx" />
     <Content Include="Pagamento.aspx" />
     <Content Include="PaginaInicial.aspx" />
     <Content Include="Quartos.aspx" />
+    <Content Include="QuartosMain.aspx" />
     <Content Include="styles\cadastro.css" />
     <Content Include="styles\estilo.css" />
     <Content Include="fenixHotelMain.html" />
@@ -89,6 +97,7 @@
     <Content Include="src\quartoStandard.jpg" />
     <Content Include="src\suitePresidencial.jpg" />
     <Content Include="src\VistadeFlorianopolis.jpg" />
+    <Content Include="styles\estilomain.css" />
     <Content Include="styles\login.css" />
     <Content Include="styles\Pagamento.css" />
     <Content Include="Web.config" />
@@ -108,6 +117,13 @@
     <Compile Include="ConhecaFlorianopolis.aspx.designer.cs">
       <DependentUpon>ConhecaFlorianopolis.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConhecaFlorianopolisMain.aspx.cs">
+      <DependentUpon>ConhecaFlorianopolisMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConhecaFlorianopolisMain.aspx.designer.cs">
+      <DependentUpon>ConhecaFlorianopolisMain.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contato.aspx.cs">
       <DependentUpon>Contato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -115,12 +131,26 @@
     <Compile Include="Contato.aspx.designer.cs">
       <DependentUpon>Contato.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContatoMain.aspx.cs">
+      <DependentUpon>ContatoMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContatoMain.aspx.designer.cs">
+      <DependentUpon>ContatoMain.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pagamento.aspx.cs">
       <DependentUpon>Pagamento.aspx</DependentUpon>
@@ -144,6 +174,13 @@
     <Compile Include="Quartos.aspx.designer.cs">
       <DependentUpon>Quartos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="QuartosMain.aspx.cs">
+      <DependentUpon>QuartosMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuartosMain.aspx.designer.cs">
+      <DependentUpon>QuartosMain.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,12 +188,20 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="SiteLogado.Master.cs">
+      <DependentUpon>SiteLogado.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteLogado.Master.designer.cs">
+      <DependentUpon>SiteLogado.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="css\bootstrap.rtl.min.css.map" />
     <None Include="packages.config" />
     <Content Include="Site.Master" />
+    <Content Include="SiteLogado.Master" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
