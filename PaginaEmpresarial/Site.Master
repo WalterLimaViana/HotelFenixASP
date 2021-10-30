@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PaginaEmpresarial.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logoFenix" src="src/logoFenixFinal.png">
+            <nav>
+                <a href="PaginaInicial.aspx">Ínicio</a>  
+                <a href="Quartos.aspx" target="_self">Quartos</a> 
+                <a href="ConhecaFlorianopolis.aspx" target="_self">Conheça Florianópolis</a>
+                <a href="Login.aspx" target="_blank">Entrar</a>               
+                <a href="Cadastro.aspx" target="_blank">Registre-se</a>             
+                <a href="Contato.aspx" target="_self">Contato</a>
+            </nav>         
+            
+
+        </div><br>
+    </header>
+    <div>
+        <asp:ContentPlaceHolder ID="bodyPage" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer>
+        <div class="contato">
+            <a>CENTRAL DE RESERVAS</a><br>
+            <a>(48) 0000-0000</a><br>
+            <a>(48) 00000-0000</a><br>
+            <a href="mailto:reservas.santacatarina@fenixhotel.com.br">reservas.santacatarina@fenixhotel.com.br</a>
+        
+        </div>     
+            
+    </footer>
+    
+   
+</body>
+</html>
