@@ -20,17 +20,19 @@ input {
     border-radius: 6px;
     outline: none;
     font-size: 22px;
+    margin-left: 369px;
 }
 
     input[type=tel], select {
-        width: 240px;
+        width: 432px;
         padding: 12px 20px;
-        margin: 8px 12px;
         box-sizing: border-box;
-        margin-left: auto;
+        margin-left: 0px;
         margin-right: auto;
         font-size: 20px;
-    }
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 
     input[type=submit] {
         width: 100%;
