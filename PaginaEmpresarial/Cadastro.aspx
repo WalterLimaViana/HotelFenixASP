@@ -13,34 +13,34 @@
 </head>
 <body>
     <div class="container">
-        <form ID="form2" runat="server">
+        <form id="form2" runat="server">
 
-          <img class="mb-4" src="src/logoFenixFinal.png" alt="" width="180" height="180">
+          <img class="mb-4" src="src/logoFenixFinal.png" alt="" width="180" height="180"/>
           <h2 class="title">Cadastre-se</h2>
 
             <asp:TextBox ID="txtNome" placeholder="Nome" runat="server"></asp:TextBox>
-            <br><br>
+            <br/><br/>
 
             <asp:TextBox ID="txtEmail" placeholder="Email" runat="server"></asp:TextBox>
-            <br><br>
+            <br/><br/>
 
             <asp:TextBox ID="txtSenha" placeholder="Senha" runat="server"></asp:TextBox>
-            <br />
-            <br>
+            <br/>
+            <br/>
             <asp:TextBox ID="txtCpf" placeholder="CPF"  runat="server"></asp:TextBox>
-            <br />
-            <br />
+            <br/>
+            <br/>
             <asp:TextBox ID="txtTelefone" placeholder="Celular" runat="server"></asp:TextBox>
-            <br><br>
+            <br/><br/>
             
             <asp:TextBox ID="txtEnd" placeholder="Endereço" runat="server"></asp:TextBox>
-            <br>
-            <br />
+            <br/>
+            <br/>
             <asp:TextBox ID="txtEstado" runat="server"></asp:TextBox>
-            <br>
+            <br/>
         
             <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" />
-            <br><br>
+            <br/><br/>
           <p class="mb-3 text-muted">&copy; 2021 Fênix Consultoria</p>
         </form>
       </div>

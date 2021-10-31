@@ -36,7 +36,7 @@ namespace PaginaEmpresarial
             if (registro.HasRows)
             {
                 //direcionar para a pagina principal
-                Response.Redirect("~/index.aspx");
+                Response.Redirect("~/main.aspx");
             }
             else
             {

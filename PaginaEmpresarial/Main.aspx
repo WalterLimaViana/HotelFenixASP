@@ -1,57 +1,77 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteLogado.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="PaginaEmpresarial.Main" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headLogado" runat="server">
+    <style type="text/css">
+        #form3 {
+            width: 547px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyPageLogado" runat="server">
     <main>
-        <div>
+        
             <div class="cadastro">
-            <form action="pagamento.php" method="POST">
+                <form id="form3" runat="server">
                 <div>
-                <div class="dateIn">
-                        <label for="data">CHECK IN</label>
-                        <br>
-                        <input class="checkIn"  type="date" id="calendario" name="checkIn">
+                    <asp:Label ID="Label1" runat="server" Text="CHECK IN"></asp:Label><br/>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <asp:TextBox ID="checkin" runat="server" Font-Size="Large"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="checkin" FirstDayOfWeek="Sunday" />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label2" runat="server" Text="CHECK OUT"></asp:Label><br/>
+                    <asp:TextBox ID="checkout" runat="server" Font-Size="Large"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="checkout" TodaysDateFormat="d MMMM , yyyy" ClearTime="True" ClientIDMode="Predictable" />
+                    <br />
                 </div>
-                </div>
-                <br>
-                    <div class="dateOut">
-                        <label for="data">CHECK OUT</label>
-                        <br>
-                        <input class="checkOut" type="date" id="calendario2" name="checkOut">
-                    </div>
-                <br>
-                <div>
-                    <label class="room" for="quartos">Quartos</label>
-                        <select id="quartos" name="quartos">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>   
-                    <label class="adult" for="adultos">Adultos</label>
-                        <select id="adultos" name="adultos">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    <label class="child" for="crianca">Crianças</label>
-                        <select id="crianca" name="crianca">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                </div><br>
                 
-                <div class="enviar"> <!--Colocar a função no botão para login em JS -->
-                    <input class="btnBuscar" type="submit" name="submit" value="Reserve Já!">
+                <br />
+                
+                <div>
+                    &nbsp;<asp:Label ID="Label3" runat="server" Text="Quartos"></asp:Label>
+&nbsp;
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                    </asp:DropDownList>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label4" runat="server" Text="Adultos"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                    <asp:DropDownList ID="DropDownList2" runat="server">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                    </asp:DropDownList>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label5" runat="server" Text="Crianças"></asp:Label>
+&nbsp;<asp:DropDownList ID="DropDownList3" runat="server">
+                        <asp:ListItem>0</asp:ListItem>
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                    </asp:DropDownList>
+&nbsp;<br />
                 </div>
-                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnEnviar" runat="server" Text="Enviar" Width="300px" />
+                <br/>
+                
+                
             </form>
+            </div>
+            
+             
+
             <div class="quartosPhotos">
                 <div class="gallery">
                     <a target="_blank" href="src/quartoStandard.jpg">
@@ -81,7 +101,7 @@
                     <div class="desc">Suíte Presidencial</div>
                 </div>
             </div>
-        </div>
+        
         
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
         <div class="titleP">

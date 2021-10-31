@@ -38,7 +38,7 @@ namespace PaginaEmpresarial
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-            
+            Response.Redirect("~/Login.aspx");
         }
     }
 }

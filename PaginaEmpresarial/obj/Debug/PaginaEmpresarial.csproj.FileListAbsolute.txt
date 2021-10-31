@@ -57,3 +57,4 @@ C:\Users\Dell\Documents\Faculdade\PIM ASP\PaginaEmpresarial\PaginaEmpresarial\ob
 C:\Users\Dell\Documents\Faculdade\PIM ASP\PaginaEmpresarial\PaginaEmpresarial\obj\Debug\PaginaEmpresarial.csproj.CopyComplete
 C:\Users\Dell\Documents\Faculdade\PIM ASP\PaginaEmpresarial\PaginaEmpresarial\obj\Debug\PaginaEmpresarial.dll
 C:\Users\Dell\Documents\Faculdade\PIM ASP\PaginaEmpresarial\PaginaEmpresarial\obj\Debug\PaginaEmpresarial.pdb
+C:\Users\Dell\Documents\Faculdade\PIM ASP\PaginaEmpresarial\PaginaEmpresarial\bin\AjaxControlToolkit.dll
