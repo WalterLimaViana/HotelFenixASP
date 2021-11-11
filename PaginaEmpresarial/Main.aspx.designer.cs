@@ -24,13 +24,13 @@ namespace PaginaEmpresarial
         protected global::System.Web.UI.HtmlControls.HtmlForm form3;
 
         /// <summary>
-        /// Label1 control.
+        /// lblCheckIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblCheckIn;
 
         /// <summary>
         /// ScriptManager1 control.
@@ -42,13 +42,13 @@ namespace PaginaEmpresarial
         protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
-        /// checkin control.
+        /// txtCheckin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox checkin;
+        protected global::System.Web.UI.WebControls.TextBox txtCheckin;
 
         /// <summary>
         /// CalendarExtender1 control.
@@ -60,22 +60,22 @@ namespace PaginaEmpresarial
         protected global::AjaxControlToolkit.CalendarExtender CalendarExtender1;
 
         /// <summary>
-        /// Label2 control.
+        /// lblCheckOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblCheckOut;
 
         /// <summary>
-        /// checkout control.
+        /// txtCheckout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox checkout;
+        protected global::System.Web.UI.WebControls.TextBox txtCheckout;
 
         /// <summary>
         /// CalendarExtender2 control.

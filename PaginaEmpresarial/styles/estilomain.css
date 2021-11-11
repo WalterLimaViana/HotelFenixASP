@@ -9,14 +9,6 @@
     align-items: center;
 }
 
-.logoFenix {
-    border: none;
-    width: 7%;
-    margin-left: 25px;
-    margin-top: 8px;
-    position: relative;
-}
-
 header {
     padding: 2px;
     background-color: white;
@@ -306,3 +298,4 @@ input[type=submit] {
     input[type=submit]:hover {
         background-color: #0f6fdd;
     }
+

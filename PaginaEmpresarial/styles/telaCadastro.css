@@ -1,0 +1,103 @@
+﻿body {
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+   }
+
+#txtNome {
+    width: 432px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+        
+}
+#txtEmail {
+    width: 432px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 20px;   
+    
+}
+
+#txtSenha {
+    width: 432px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 20px;
+        
+}
+
+#txtCpf {
+    width: 432px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 20px;    
+    
+}
+
+#txtTelefone {
+    width: 432px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 20px;
+        
+}
+
+#txtEnd {
+    width: 432px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 20px;
+        
+}
+
+#txtEstado {
+    width: 432px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: auto;
+    font-size: 20px;
+        
+}
+
+#btnCadastrar {
+    width: 432px;
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: #4081f8;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+#btnCadastrar:hover {
+    background-color: #0f6fdd;
+}

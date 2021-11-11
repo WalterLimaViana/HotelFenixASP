@@ -1,56 +1,72 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PaginaInicial.aspx.cs" Inherits="PaginaEmpresarial.PaginaInicial" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyPage" runat="server">
     <main>
-        <div class="cadastro">
-            <form>
+        
+            <div class="cadastro">
+                <form id="form3" runat="server">
                 <div>
-                <div class="dateIn">
-                        <label for="data">CHECK IN</label>
-                        <br>
-                        <input class="checkIn"  type="date" id="data" name="checkIn">
+                    <asp:Label ID="Label1" runat="server" Text="CHECK IN"></asp:Label><br/>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <asp:TextBox ID="checkin" runat="server" Font-Size="Large"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="checkin" />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label2" runat="server" Text="CHECK OUT"></asp:Label><br/>
+                    <asp:TextBox ID="checkout" runat="server" Font-Size="Large"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="checkout" TodaysDateFormat="d MMMM , yyyy" ClearTime="True" ClientIDMode="Predictable" />
+                    <br />
                 </div>
-                </div>
-                <br>
-                    <div class="dateOut">
-                        <label for="data">CHECK OUT</label>
-                        <br>
-                        <input class="checkOut" type="date" id="data" name="checkOut">
-                    </div>
-                <br>
-                <div>
-                    <label class="room" for="quartos">Quartos</label>
-                        <select id="quartos" name="quartos">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    <label class="adult" for="adultos">Adultos</label>
-                        <select id="adultos" name="adultos">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    <label class="child" for="crianca">Crianças</label>
-                        <select id="crianca" name="crianca">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                </div><br>
                 
-                <div class="enviar"> <!--Colocar a função no botão para login em JS -->
-                    <input class="btnBuscar" type="submit" value="Reserve Já!">
+                <br />
+                
+                <div>
+                    &nbsp;<asp:Label ID="Label3" runat="server" Text="Quartos"></asp:Label>
+&nbsp;
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                    </asp:DropDownList>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label4" runat="server" Text="Adultos"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                    <asp:DropDownList ID="DropDownList2" runat="server">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                    </asp:DropDownList>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label5" runat="server" Text="Crianças"></asp:Label>
+&nbsp;<asp:DropDownList ID="DropDownList3" runat="server">
+                        <asp:ListItem>0</asp:ListItem>
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                    </asp:DropDownList>
+&nbsp;<br />
                 </div>
-                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnEnviar" runat="server" Text="Enviar" Width="300px" PostBackUrl="~/Login.aspx" />
+                <br/>
+                
+                
             </form>
+            </div>
+            
+             
+
             <div class="quartosPhotos">
                 <div class="gallery">
                     <a target="_blank" href="src/quartoStandard.jpg">
@@ -80,10 +96,9 @@
                     <div class="desc">Suíte Presidencial</div>
                 </div>
             </div>
-        </div>
         
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>             
         
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
         <div class="titleP">
             <p class="titleMap">
                 <h2>Venha conhecer um dos melhores hotéis de Florianópolis</h2>
@@ -94,7 +109,7 @@
         <div class="mapsBox">
             <div class="maps">                
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.980996203008!2d-48.55814848584348!3d-27.594118782838972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273821b563cedb%3A0x83801b8d14253f0!2sR.%20Felipe%20Schmidt%20-%20Centro%2C%20Florian%C3%B3polis%20-%20SC%2C%2088010-400!5e0!3m2!1sen!2sbr!4v1632099058113!5m2!1sen!2sbr" 
-                width="1300" height="300" style="border:0;" 
+                width="100%" height="350" style="border:0;" 
                 allowfullscreen="" loading="lazy">
                 </iframe>
               </div>

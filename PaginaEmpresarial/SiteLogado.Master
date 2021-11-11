@@ -8,17 +8,26 @@
     <asp:ContentPlaceHolder ID="headLogado" runat="server">
     </asp:ContentPlaceHolder>
     <link href="styles/estilomain.css" rel="stylesheet" />
+    <style>
+        .logoFenix {
+            border: none;
+            width: 10%;
+            margin-left: 25px;
+            margin-top: 10px;
+            position: relative;
+         }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img class="logoFenix" src="src/logoFenixFinal.png">
+            <img class="logoFenix" src="src/logoFinal.png">
             <nav>
                 <a href="Main.aspx">Ínicio</a>  
                 <a href="QuartosMain.aspx" target="_self">Quartos</a> 
                 <a href="ConhecaFlorianopolisMain.aspx" target="_self">Conheça Florianópolis</a>
                 <a href="ContatoMain.aspx" target="_self">Contato</a>            
-                <a href="Login.aspx" target="_self">Sair</a>
+                <a href="Perfil.aspx" target="_self">Sair</a>
             </nav>         
             
 

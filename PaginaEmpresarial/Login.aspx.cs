@@ -28,7 +28,7 @@ namespace PaginaEmpresarial
             con.ConnectionString = connString.ToString();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "select * from usuario where email = @email and senha = @senha";
+            cmd.CommandText = "select * from registro where email = @email and senha = @senha";
             cmd.Parameters.AddWithValue("email", email);
             cmd.Parameters.AddWithValue("senha", senha);
             con.Open();
@@ -36,7 +36,9 @@ namespace PaginaEmpresarial
             if (registro.HasRows)
             {
                 //direcionar para a pagina principal
-                Response.Redirect("~/main.aspx");
+                Session["id"] = txtEmail.Text;
+                Response.Redirect("~/Perfil.aspx");
+                Session.RemoveAll();
             }
             else
             {

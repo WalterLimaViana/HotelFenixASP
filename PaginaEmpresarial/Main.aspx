@@ -10,19 +10,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyPageLogado" runat="server">
     <main>
-        
             <div class="cadastro">
                 <form id="form3" runat="server">
                 <div>
-                    <asp:Label ID="Label1" runat="server" Text="CHECK IN"></asp:Label><br/>
+                    
+                    <asp:Label ID="lblCheckIn" runat="server" Text="CHECK IN"></asp:Label><br/>
                     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-                    <asp:TextBox ID="checkin" runat="server" Font-Size="Large"></asp:TextBox>
-                    <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="checkin" FirstDayOfWeek="Sunday" />
+                    <asp:TextBox ID="txtCheckin" runat="server" Font-Size="Large"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtCheckin" FirstDayOfWeek="Sunday" />
                     <br />
                     <br />
-                    <asp:Label ID="Label2" runat="server" Text="CHECK OUT"></asp:Label><br/>
-                    <asp:TextBox ID="checkout" runat="server" Font-Size="Large"></asp:TextBox>
-                    <ajaxToolkit:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="checkout" TodaysDateFormat="d MMMM , yyyy" ClearTime="True" ClientIDMode="Predictable" />
+                    <asp:Label ID="lblCheckOut" runat="server" Text="CHECK OUT"></asp:Label><br/>
+                    <asp:TextBox ID="txtCheckout" runat="server" Font-Size="Large"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender ID="CalendarExtender2" runat="server" TargetControlID="txtCheckout" TodaysDateFormat="d MMMM , yyyy" ClearTime="True" ClientIDMode="Predictable" />
                     <br />
                 </div>
                 
@@ -63,7 +63,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btnEnviar" runat="server" Text="Enviar" Width="300px" />
+                <asp:Button ID="btnEnviar" runat="server" Text="Enviar" Width="300px" OnClick="btnEnviar_Click" />
                 <br/>
                 
                 

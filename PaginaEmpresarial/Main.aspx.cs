@@ -13,5 +13,12 @@ namespace PaginaEmpresarial
         {
 
         }
+
+        protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+            Session["entrada"] = txtCheckin.Text;
+            Session["saida"] = txtCheckout.Text;
+            Response.Redirect("Pagamento.aspx");
+        }
     }
 }

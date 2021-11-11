@@ -87,13 +87,14 @@
     <Content Include="Main.aspx" />
     <Content Include="Pagamento.aspx" />
     <Content Include="PaginaInicial.aspx" />
+    <Content Include="Perfil.aspx" />
     <Content Include="Quartos.aspx" />
     <Content Include="QuartosMain.aspx" />
-    <Content Include="styles\cadastro.css" />
+    <Content Include="src\Logo.png" />
+    <Content Include="src\logoFinal.png" />
     <Content Include="styles\estilo.css" />
     <Content Include="fenixHotelMain.html" />
     <Content Include="src\floripa.jpg" />
-    <Content Include="src\logoFenixFinal.png" />
     <Content Include="src\PonteHercilioLuz.jpg" />
     <Content Include="src\PraiaFlorianopolis.jpg" />
     <Content Include="src\quartoDeluxe.jpg" />
@@ -104,7 +105,9 @@
     <Content Include="styles\estilomain.css" />
     <Content Include="styles\login.css" />
     <Content Include="styles\Pagamento.css" />
+    <Content Include="styles\telaCadastro.css" />
     <Content Include="Web.config" />
+    <Content Include="RecuperarSenha.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cadastro.aspx.cs">
@@ -170,6 +173,13 @@
     <Compile Include="PaginaInicial.aspx.designer.cs">
       <DependentUpon>PaginaInicial.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quartos.aspx.cs">
       <DependentUpon>Quartos.aspx</DependentUpon>
@@ -198,6 +208,13 @@
     </Compile>
     <Compile Include="SiteLogado.Master.designer.cs">
       <DependentUpon>SiteLogado.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarSenha.aspx.cs">
+      <DependentUpon>RecuperarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperarSenha.aspx.designer.cs">
+      <DependentUpon>RecuperarSenha.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
