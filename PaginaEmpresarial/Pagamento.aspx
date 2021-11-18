@@ -34,21 +34,21 @@
               <small class="text-muted"></small>
             </div>
             <div id="days">
-              <?php echo $days?>
+                
             </div>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Check In</h6>              
             </div>
-              <?php echo $_POST['checkIn']?>
+              <asp:Label ID="lblcheckin" runat="server" ></asp:Label>
           </li>
 
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Check Out</h6>              
             </div>
-              <?php echo $_POST['checkOut']?>
+              <asp:Label ID="lblcheckout" runat="server" ></asp:Label>
           </li>
           
           
@@ -76,7 +76,7 @@
               <h6 class="my-0">Quantidade de Quartos</h6>              
             </div>
               <small id="numQuartos" name="numeroQuartos">
-                <?php echo $_POST['quartos']?>
+                  <asp:Label ID="lblquartos" runat="server"></asp:Label>
               </small>
               
           </li>
@@ -85,14 +85,14 @@
             <div>
               <h6 class="my-0">Adultos</h6>              
             </div>
-            <?php echo $_POST['adultos']?>
+              <asp:Label ID="lbladultos" runat="server" ></asp:Label>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Crianças</h6>
               <small class="text-muted">Acima de 12 anos</small>
             </div>
-            <?php echo $_POST['crianca']?>
+              <asp:Label ID="lblcriancas" runat="server" ></asp:Label>
           </li>
 
           <li class="list-group-item d-flex justify-content-between bg-light">

@@ -16,9 +16,18 @@ namespace PaginaEmpresarial
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-            Session["entrada"] = txtCheckin.Text;
-            Session["saida"] = txtCheckout.Text;
-            Response.Redirect("Pagamento.aspx");
+            
+        }
+
+        protected void btnEnviarquerystring_Click(object sender, EventArgs e)
+        {
+            string dadosPagina;
+            dadosPagina = "Pagamento.aspx?checkin=" + txtCheckin.Text +
+                 "&checkout=" + txtCheckout.Text +
+                 "&quartos=" + DropDownList1.SelectedItem +
+                 "&adultos=" + DropDownList2.SelectedItem +
+                 "&criancas=" + DropDownList3.SelectedItem;
+            Response.Redirect(dadosPagina);
         }
     }
 }

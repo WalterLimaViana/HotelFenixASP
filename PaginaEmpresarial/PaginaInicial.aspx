@@ -10,9 +10,9 @@
                 <form id="form3" runat="server">
                 <div>
                     <asp:Label ID="Label1" runat="server" Text="CHECK IN"></asp:Label><br/>
-                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True"></asp:ScriptManager>
                     <asp:TextBox ID="checkin" runat="server" Font-Size="Large"></asp:TextBox>
-                    <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="checkin" />
+                    <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="checkin" DaysModeTitleFormat="ddMM, yyyy" TodaysDateFormat="ddMM, yyyy" />
                     <br />
                     <br />
                     <asp:Label ID="Label2" runat="server" Text="CHECK OUT"></asp:Label><br/>

@@ -11,7 +11,14 @@ namespace PaginaEmpresarial
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!Page.IsPostBack)
+            {
+                lblcheckin.Text = Request.QueryString["checkin"];
+                lblcheckout.Text = Request.QueryString["checkout"];
+                lblquartos.Text = Request.QueryString["quartos"];
+                lbladultos.Text = Request.QueryString["adultos"];
+                lblcriancas.Text = Request.QueryString["criancas"];
+            }
         }
 
         
