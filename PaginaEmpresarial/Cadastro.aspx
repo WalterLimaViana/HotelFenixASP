@@ -32,7 +32,7 @@
             <asp:TextBox ID="txtEnd" placeholder="Endereço" runat="server"></asp:TextBox>
             <br/>
             <br/>
-            <asp:TextBox ID="txtEstado" placeholder="Palavra-Chave" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtEstado" placeholder="Estado" runat="server"></asp:TextBox>
             <br/>
         
             <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" />
