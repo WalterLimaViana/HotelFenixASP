@@ -28,15 +28,7 @@
       <p class="lead">Faça aqui a confirmação da sua reserva.</p>
     </div>
           <ul class="list-group mb-3">
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Número de Diárias</h6>
-              <small class="text-muted"></small>
-            </div>
-            <div id="days">
-                
-            </div>
-          </li>
+          
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Check In</h6>              
@@ -94,20 +86,13 @@
             </div>
               <asp:Label ID="lblcriancas" runat="server" ></asp:Label>
           </li>
-
-          <li class="list-group-item d-flex justify-content-between bg-light">
-            <div class="text-success">
-              <h6 class="my-0">Código Promocional</h6>
-              <small>EXAMPLECODE</small>
-            </div>
-            <span class="text-success"></span>
-          </li>
           <li class="list-group-item d-flex justify-content-between">
-            <span>Total (R$)</span>
+            <span>Valor do Quarto (R$)</span>
             <strong>
-            <div id='resultado_soma'><?echo $total ?></div>              
+            <div id='resultado_soma'></div>              
             </strong>
           </li>
+              
         </ul>
          <center>
          </center>
@@ -144,5 +129,6 @@
             }
         })();
     </script>
+    
 </body>
 </html>

@@ -11,7 +11,7 @@
     <body>
     <form id="form1" runat="server">
         <div class="container">
-      <img class="logo" src="src/logoFenixFinal.png" alt="" width="180" height="180"/>
+      <img class="logo" src="src/logoFinal.png" alt="" width="180" height="180"/>
       <h1>Recuperação de Senha</h1>
       
         &nbsp;<asp:TextBox ID="txtEmail" placeholder="Email" runat="server" ></asp:TextBox>

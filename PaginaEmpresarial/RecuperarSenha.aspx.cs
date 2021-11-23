@@ -32,12 +32,13 @@ namespace PaginaEmpresarial
             cmd.CommandText = "select * from registro where email = @email and cpf = @cpf";
             cmd.Parameters.AddWithValue("email", email);
             cmd.Parameters.AddWithValue("cpf", cpf);
+            
             con.Open();
             SqlDataReader registro = cmd.ExecuteReader();
             if (registro.HasRows)
             {
                 //direcionar para a pagina principal
-                lMsg.Text = "Sua senha é:";
+                lMsg.Text = "Sua senha é:" + email;
             }
             else
             {
