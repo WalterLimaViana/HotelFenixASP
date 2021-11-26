@@ -93,7 +93,6 @@
     <Content Include="src\Logo.png" />
     <Content Include="src\logoFinal.png" />
     <Content Include="styles\estilo.css" />
-    <Content Include="fenixHotelMain.html" />
     <Content Include="src\floripa.jpg" />
     <Content Include="src\PonteHercilioLuz.jpg" />
     <Content Include="src\PraiaFlorianopolis.jpg" />

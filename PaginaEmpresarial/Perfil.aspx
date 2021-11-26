@@ -19,8 +19,6 @@
         
         <div class="text2">
           <a href= "Main.aspx" target="_self">Página Inicial</a><br /><br />
-          <a href= "Cadastro.aspx" target="_self">Não possuo cadastro</a><br/><br/>
-          <a href= "Contato.aspx" target="_self">Contato</a><br /><br />
             <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Sair</asp:LinkButton>
         </div><br/>
         <p class="mb-3 text-muted">&copy; 2021 Fênix Consultoria</p>
